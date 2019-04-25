@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TestWatchApplication_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="7NS-Sn-JVL">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="844428_flickr_512x512" id="LEP-H7-bUH"/>
+                                <group alignment="left" layout="vertical" spacing="0.0" id="Vt1-uh-15C">
+                                    <items>
+                                        <label alignment="left" text="Flight 123" id="pal-OY-ihN">
+                                            <color key="textColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.31143546031426272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label alignment="left" text="MEL to SFO" id="GrD-Co-zbF"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <label width="1" height="0.90000000000000002" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="U0O-LS-1gh">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="myLabel" destination="U0O-LS-1gh" id="2l4-bn-QFM"/>
+                        <outlet property="smallLabel" destination="pal-OY-ihN" id="64Y-6Z-2f6"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
